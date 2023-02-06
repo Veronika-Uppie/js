@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork/lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson2/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,8 @@
       <workItem from="1675237313574" duration="609000" />
       <workItem from="1675238048661" duration="3825000" />
       <workItem from="1675623088347" duration="5126000" />
-      <workItem from="1675634324177" duration="540000" />
+      <workItem from="1675634324177" duration="620000" />
+      <workItem from="1675669377523" duration="4780000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork">
       <created>1675246606476</created>
@@ -73,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675634405622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Перша частина дз">
+      <created>1675634945746</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675634945746</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
