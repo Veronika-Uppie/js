@@ -59,7 +59,8 @@
       <workItem from="1675238048661" duration="3825000" />
       <workItem from="1675623088347" duration="5126000" />
       <workItem from="1675634324177" duration="620000" />
-      <workItem from="1675669377523" duration="4780000" />
+      <workItem from="1675669377523" duration="4855000" />
+      <workItem from="1675674294521" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork">
       <created>1675246606476</created>
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675634945746</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Половина другої частини">
+      <created>1675674275160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675674275160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HomeWork" />
     <MESSAGE value="Перша частина дз" />
-    <option name="LAST_COMMIT_MESSAGE" value="Перша частина дз" />
+    <MESSAGE value="Половина другої частини" />
+    <option name="LAST_COMMIT_MESSAGE" value="Половина другої частини" />
   </component>
 </project>
