@@ -114,17 +114,15 @@ let products = [
 ];
 
 for (const product of products) {
-    document.write(`<div ${className="product-card"}>`);
-    document.write(`<h3 ${className="product-title"}>${product.title}. Price - ${product.price}</h3>`);
-    document.write(`<img src="${product.image}" alt="${product.image}" ${className="product-image"}>`);
-    document.write(`</div>`);
-
-
+    document.write(`
+        <div class="product-card">
+            <h3 class="product-title">${product.title}. Price - ${product.price}</h3>
+            <img src="${product.image}" alt="${product.title}" class="product-image">
+        </div>
+    `);
 }
 
 
-
-//
 // --------------------
 //     є масив
 // let users = [
@@ -144,3 +142,27 @@ for (const product of products) {
 //     - користувачів зі статусом true
 // - користувачів зі статусом false
 // - користувачів які старші за 30 років
+
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+
+for (let user of users) {
+
+    let status = user.status;
+  if (status === true) {
+      document.write(`${user.status}`);}
+
+
+
+  }

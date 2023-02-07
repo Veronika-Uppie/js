@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork/lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson2/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/lesson3/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson3/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/lesson3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson3/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -33,20 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/js&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/js",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +64,7 @@
       <workItem from="1675634324177" duration="620000" />
       <workItem from="1675669377523" duration="4855000" />
       <workItem from="1675674294521" duration="2848000" />
+      <workItem from="1675796331076" duration="7298000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork">
       <created>1675246606476</created>
@@ -90,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675674275160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="частина дз">
+      <created>1675801207374</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675801207374</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +111,7 @@
     <MESSAGE value="HomeWork" />
     <MESSAGE value="Перша частина дз" />
     <MESSAGE value="Половина другої частини" />
-    <option name="LAST_COMMIT_MESSAGE" value="Половина другої частини" />
+    <MESSAGE value="частина дз" />
+    <option name="LAST_COMMIT_MESSAGE" value="частина дз" />
   </component>
 </project>
