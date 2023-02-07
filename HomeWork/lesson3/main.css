@@ -1,0 +1,15 @@
+.product-card {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+
+}
+.product-title
+{
+    font-size: 24px;
+}
+img {
+    width: 50%;
+}
