@@ -34,29 +34,29 @@ let book3 = {
 console.log(book1, book2, book3);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
-let HarryPotter = {
+let harryPotter = {
     title: "Harry Potter and Philosopher's Stone",
     pageCount: 223,
     genre: 'Fantasy',
     autors: ['J. K. Rowling',57]
 };
-console.log(HarryPotter);
+console.log(harryPotter);
 
-let Marsianin = {
-    title: "Marsianin",
+let marsianin = {
+    title: "marsianin",
     pageCount: 201,
     genre: 'Fantasy',
     autors: [' E. Veier',45]
 };
-console.log(Marsianin);
+console.log(marsianin);
 
-let LessonsinChemistry = {
-    title: "Lessons in Chemistry: A Novel",
+let lessonsinChemistry = {
+    title: "lessons in Chemistry: A Novel",
     pageCount: 400,
     genre: 'Humor',
     autors: ['B. Garmus', 66]
 };
-console.log(LessonsinChemistry);
+console.log(lessonsinChemistry);
 
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
