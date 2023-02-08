@@ -66,6 +66,7 @@
       <workItem from="1675796331076" duration="7321000" />
       <workItem from="1675846606091" duration="1388000" />
       <workItem from="1675848226582" duration="2869000" />
+      <workItem from="1675851131919" duration="2193000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork">
       <created>1675246606476</created>
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675847993704</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add hw">
+      <created>1675851161685</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675851161685</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +172,7 @@
     <MESSAGE value="частина дз" />
     <MESSAGE value="дз" />
     <MESSAGE value="Виправила помилки в дз" />
-    <option name="LAST_COMMIT_MESSAGE" value="Виправила помилки в дз" />
+    <MESSAGE value="add hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hw" />
   </component>
 </project>

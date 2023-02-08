@@ -176,6 +176,10 @@ for (let user of users) {
         document.write(`<div>${user.name}</div>`);}
 }
 
+
+
+
+
 // additional1.txt ________________________________________________________________________________
 // --створити масив з:
 //     - з 5 числових значень
@@ -272,69 +276,170 @@ while (x >= 0) {
 }
 
 console.log('цикл for в зворотньому порядку');
-for (let y = arr3.length-1; y < arr3.length; y++) {
+for (let y = arr3.length-1; y >= 0; y--) {
     console.log(arr3[y]);
 }
 
-//
-// console.log('цикл while, числа тільки з непарним індексом в зворотньому порядку');
-// let e = 0;
-// while (e < arr3.length) {
-//     if (e%2 !== 0) {
-//         console.log(arr3[e]);
-//     }
-//     e++;
-// }
-//
-// console.log('цикл for, числа тільки з непарним індексом в зворотньому порядку');
-// for (let s = 0; s < arr3.length; s++) {
-//     if (s%2 !== 0) {
-//         console.log(arr3[s]);
-//     }
-// }
-//
-// console.log('цикл while, числа тільки парні  значення в зворотньому порядку');
-// let r = 0;
-// while (r < arr3.length) {
-//     if (arr3[r]%2 === 0) {
-//         console.log(arr3[r]);
-//     }
-//     r++;
-// }
-//
-// console.log('цикл for, числа тільки парні  значення в зворотньому порядку');
-// for (let q = 0; q < arr3.length; q++) {
-//     if (arr3[q]%2 === 0) {
-//         console.log(arr3[q]);
-//     }
-// }
-//
-// console.log('кожне число кратне 3 на слово "okten" в зворотньому порядку');
-// let w = 0;
-// while (w < arr3.length) {
-//     if (w%3 === 0){
-//         console.log('okten')
-//     } else {
-//         console.log(arr3[w]);
-//     }
-//     w++;
-// }
 
+console.log('цикл while, числа тільки з непарним індексом в зворотньому порядку');
+let eq = arr3.length-1;
+while (eq >= 0) {
+    if (eq%2 !== 0) {
+        console.log(arr3[eq]);
+    }
+    eq--;
+}
 
+console.log('цикл for, числа тільки з непарним індексом в зворотньому порядку');
+for (let sw = arr3.length -1; sw >=0 ; sw--) {
+    if (sw%2 !== 0) {
+        console.log(arr3[sw]);
+    }
+}
 
+console.log('цикл while, числа тільки парні  значення в зворотньому порядку');
+let rw = arr3.length-1;
+while (rw >= 0) {
+    if (arr3[rw]%2 === 0) {
+        console.log(arr3[rw]);
+    }
+    rw--;
+}
+
+console.log('цикл for, числа тільки парні  значення в зворотньому порядку');
+for (let qw = arr3.length-1; qw >= 0; qw--) {
+    if (arr3[qw]%2 === 0) {
+        console.log(arr3[qw]);
+    }
+}
+
+console.log('кожне число кратне 3 на слово "okten" в зворотньому порядку');
+let ww = arr3.length -1;
+while (ww >= 0) {
+    if (ww%3 === 0){
+        console.log('okten')
+    } else {
+        console.log(arr3[ww]);
+    }
+    ww--;
+}
 
 
 // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log('масив з 10 числових елементів');
+let ks = 0;
+while (ks < arr4.length) {
+    console.log(arr4[ks]);
+    ks++;
+}
+
 // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+
+let arr5 = ['qwe', 'rty', 'uui', 'opu', 'dfg', 'jhg', 'vmi', 'myh', 'brg', 'fbh'];
+
+console.log('масив з 10 строкрових елементів');
+let qs = 0;
+while (qs < arr5.length) {
+    console.log(arr5[qs]);
+    qs++;
+}
+
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+
+let arr6 = ['rgrg', 'egergr', true, false, NaN, 1111, 222222, {name: 'Veronika'}, [1, 2, 3], 'f354413bh'];
+
+console.log('масив з 10 елементів будь-якого типу');
+let qsq = 0;
+while (qsq < arr6.length) {
+    console.log(arr6[qsq]);
+    qsq++;
+}
+
+
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
 // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-//
+
+let arr7 = ['ergr', 'cscs', true, false, 'svsdc', 1111, 222222, true, 123, false];
+
+console.log('масив з 10 елементів будь-якого типу/ тільки булеві елементи');
+let po = 0;
+while (po < arr7.length) {
+    if (typeof arr7[po] === "boolean") {
+        console.log(arr7[po]);
+    }
+    po++;
+}
+
+console.log('масив з 10 елементів будь-якого типу/ тільки числові елементи');
+let pp = 0;
+while (pp < arr7.length) {
+    if (typeof arr7[pp] === "number") {
+        console.log(arr7[pp]);
+    }
+    pp++;
+}
+
+console.log('масив з 10 елементів будь-якого типу/ тільки рядкові елементи');
+let re = 0;
+while (re < arr7.length) {
+    if (typeof arr7[re] === "string") {
+        console.log(arr7[re]);
+    }
+    re++;
+}
+
+
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+
+console.log('Наповнити порожній масив 10 елементами через звернення до конкретних індексів');
+let arr8 = [];
+arr8[0] = 'srgrg';
+arr8[1] = 1224234;
+arr8[2] = 234234;
+arr8[3] = 'sgrrrrtgrt';
+arr8[4] = true;
+arr8[5] = false;
+arr8[6] = [111, 222, 333];
+arr8[7] = {name: 'Tim'};
+arr8[8] = 1323;
+arr8[9] = 'dvf34';
+
+let dv = 0;
+while (dv < arr8.length) {
+    console.log(arr8[dv]);
+    dv++;
+}
+
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+console.log('цикл for на 10  ітерацій з кроком 1');
+document.write(`<div>цикл for на 10  ітерацій з кроком 1</div>`)
+for (let yi = 0; yi < 10; yi++) {
+    console.log(yi);
+    document.write(`${yi} `)
+}
+
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+console.log('цикл for на 100  ітерацій з кроком 1');
+document.write(`<div>цикл for на 100  ітерацій з кроком 1</div>`)
+for (let yi = 0; yi < 100; yi++) {
+    console.log(yi);
+    document.write(`${yi} `)
+}
+
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+
+console.log('цикл for на 100  ітерацій з кроком 2');
+document.write(`<div>цикл for на 100  ітерацій з кроком 1</div>`)
+for (let yi = 0; yi < 100; yi += 2) {
+    console.log(yi);
+    document.write(`${yi} `)
+}
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 //
