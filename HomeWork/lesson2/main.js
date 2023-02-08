@@ -187,7 +187,8 @@ switch (+schedule) {
     case 7:
         console.log('Sunday');
         break;
-
+    default:
+        console.log('Error')
 }
 
 //     - Користувач вводить або має два числа.
