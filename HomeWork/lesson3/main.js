@@ -503,124 +503,20 @@ let books = [
 }
 ];
 let max = 0;
+let maxBook;
 for (let book of books) {
     for (let page in book) {
+
         if (page === 'pageCount') {
                 if (book[page] > max) {
                     max = book[page];
                 }
         }
+        if (book[page] === max){
+            maxBook = book
     }
 }
-console.log(max);
-
-// for (let book of books) {
-//     for (let page in book) {
-//         let max = 0;
-//         if (book["pageCount"] < max) {
-//             max = book["title"]
-//         } console.log(max)
-//         } }
-
-// for (let book of books) {
-//
-//     let max = 0;
-//     for (let num in books) {
-//         if (num > max) {
-//             max = num;
-//         }
-//     }
-//     console.log(max);
-// }
+}
+console.log(maxBook)
 
 
-
-//         let min = page[0];
-//         for (let c = 0; c < book.length; c++)
-//         { if(page[c] < min) {
-//             min = page[c]
-//             } else {
-//             max = page[c]
-//     }  console.log(max) ;
-//     }
-//
-// }
-
-
-
-
-
-
-
-// let bigestBook = 0;
-// for (let c = 0; c < books.length; c++){
-//     let book = books[c];
-//     if (book.pageCount > bigestBook) {
-//         book = bigestBook
-//     }
-//     console.log(bigestBook)
-// }
-
-
-
-
-
-//
-// console.log(books[pagCount])
-//
-
-// let biggestBook = 0;
-// for (let book of books) {
-//     let pageCount = book.pageCount;
-//     if (pageCount > biggestBook) {
-//         book = biggestBook}
-//     console.log(biggestBook);
-// }
-
-
-// let lll = 0;
-// while (lll < books.length) {
-//     let book = books[lll]
-//     let page= books.pageCount;
-//     let biggestBook = 0;
-//     if (page > biggestBook) {
-//         book = biggestBook}
-//     console.log(biggestBook);
-//     lll++
-// }
-
-
-
-
-// 1. Получаем число
-//
-// 2. Записывает последнюю цифру в МИН и МАКС
-//
-// 3. Запускаем цикл
-//
-// 4. Сравниваем последнее число(ПС) с МИН и МАКС
-//
-// 5. Если ПС > МАКС ...... Иначе если ПС < МИН
-//
-// 6. Кидаем число в соответствии условию
-//
-// 7. Не забываем убрать последнюю цифру из числа
-//
-// 8. Делаем вывод сообщения
-
-
-
-
-
-
-
-// let k = 0;
-// while (k < arr3.length) {
-//     console.log(arr3[k]);
-//     k++;
-// }
-
-
-// for (let y = 0; y < arr3.length; y++) {
-//     console.log(arr3[y]);
-// }
