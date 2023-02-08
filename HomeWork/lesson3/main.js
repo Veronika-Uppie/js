@@ -111,7 +111,7 @@ let products = [
     },
 ];
 
-for (const product of products) {
+for (let product of products) {
     document.write(`
         <div class="product-card">
             <h3 class="product-title">${product.title}. Price - ${product.price}</h3>
@@ -503,10 +503,77 @@ let books = [
 },
 
 ];
-let biggestBook = 0;
-for (let book of books) {
-    let page = book.pageCount;
-    if (page > biggestBook) {
-        book = biggestBook}
-    console.log(biggestBook);
+
+let bigestBook = 0;
+for (let c = 0; c < books.length; c++){
+    let book = books[c];
+    if (book.pageCount > bigestBook) {
+        book = bigestBook
+    }
+    console.log(bigestBook)
 }
+
+
+
+
+
+
+//
+// console.log(books[pagCount])
+//
+
+// let biggestBook = 0;
+// for (let book of books) {
+//     let pageCount = book.pageCount;
+//     if (pageCount > biggestBook) {
+//         book = biggestBook}
+//     console.log(biggestBook);
+// }
+
+
+// let lll = 0;
+// while (lll < books.length) {
+//     let book = books[lll]
+//     let page= books.pageCount;
+//     let biggestBook = 0;
+//     if (page > biggestBook) {
+//         book = biggestBook}
+//     console.log(biggestBook);
+//     lll++
+// }
+
+
+
+
+// 1. Получаем число
+//
+// 2. Записывает последнюю цифру в МИН и МАКС
+//
+// 3. Запускаем цикл
+//
+// 4. Сравниваем последнее число(ПС) с МИН и МАКС
+//
+// 5. Если ПС > МАКС ...... Иначе если ПС < МИН
+//
+// 6. Кидаем число в соответствии условию
+//
+// 7. Не забываем убрать последнюю цифру из числа
+//
+// 8. Делаем вывод сообщения
+
+
+
+
+
+
+
+// let k = 0;
+// while (k < arr3.length) {
+//     console.log(arr3[k]);
+//     k++;
+// }
+
+
+// for (let y = 0; y < arr3.length; y++) {
+//     console.log(arr3[y]);
+// }
