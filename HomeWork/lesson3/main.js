@@ -159,19 +159,19 @@ document.write('Користувачі зі статусом true: ')
 for (let user of users) {
     let status = user.status;
     if (status === true) {
-        document.write(`<div>${user.name}, </div>`);}
+        document.write(`<div>${user.name}</div>`);}
   }
 
 document.write('Користувачі зі статусом false: ')
 for (let user of users) {
     let status = user.status;
     if (status === false) {
-        document.write(`<div>${user.name}, </div>`);}
+        document.write(`<div>${user.name}</div>`);}
 }
 
 document.write('Користувачі які старші за 30 років: ')
 for (let user of users) {
     let age = user.age;
     if (age > 30) {
-        document.write(`<div>${user.name}, </div>`);}
+        document.write(`<div>${user.name}</div>`);}
 }
