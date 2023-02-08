@@ -500,19 +500,66 @@ let books = [
         pageCount: 219,
         genre: 'filmstory',
         autors: ['O. Dovzhenko']
-},
-
-];
-
-let bigestBook = 0;
-for (let c = 0; c < books.length; c++){
-    let book = books[c];
-    if (book.pageCount > bigestBook) {
-        book = bigestBook
-    }
-    console.log(bigestBook)
 }
+];
+let max = 0;
+for (let book of books) {
+    for (let page in book) {
+        if (page === 'pageCount') {
+                if (book[page] > max) {
+                    max = book[page];
+                }
+        }
+    }
+}
+console.log(max);
 
+// for (let book of books) {
+//     for (let page in book) {
+//         let max = 0;
+//         if (book["pageCount"] < max) {
+//             max = book["title"]
+//         } console.log(max)
+//         } }
+
+// for (let book of books) {
+//
+//     let max = 0;
+//     for (let num in books) {
+//         if (num > max) {
+//             max = num;
+//         }
+//     }
+//     console.log(max);
+// }
+
+
+
+//         let min = page[0];
+//         for (let c = 0; c < book.length; c++)
+//         { if(page[c] < min) {
+//             min = page[c]
+//             } else {
+//             max = page[c]
+//     }  console.log(max) ;
+//     }
+//
+// }
+
+
+
+
+
+
+
+// let bigestBook = 0;
+// for (let c = 0; c < books.length; c++){
+//     let book = books[c];
+//     if (book.pageCount > bigestBook) {
+//         book = bigestBook
+//     }
+//     console.log(bigestBook)
+// }
 
 
 
