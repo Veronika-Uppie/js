@@ -434,20 +434,79 @@ for (let yi = 0; yi < 100; yi++) {
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 
 console.log('цикл for на 100  ітерацій з кроком 2');
-document.write(`<div>цикл for на 100  ітерацій з кроком 1</div>`)
-for (let yi = 0; yi < 100; yi += 2) {
-    console.log(yi);
-    document.write(`${yi} `)
+document.write(`<div>цикл for на 100  ітерацій з кроком 2</div>`)
+for (let lk = 0; lk < 100; lk += 2) {
+    console.log(lk);
+    document.write(`${lk} `)
 }
 
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+
+console.log('цикл for на 100  ітерацій/ тільки парні кроки');
+document.write(`<div>цикл for на 100  ітерацій/ тільки парні кроки</div>`)
+for (let ppn = 0; ppn < 100; ppn++) {
+    if(ppn%2 === 0) {
+        console.log(ppn);
+        document.write(`${ppn} `)
+    }
+}
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-//
-//
-//
+
+console.log('цикл for на 100  ітерацій/ тільки непарні кроки');
+document.write(`<div>цикл for на 100  ітерацій/ тільки непарні кроки</div>`)
+for (let ppo = 0; ppo < 100; ppo++) {
+    if(ppo%2 !== 0) {
+        console.log(ppo);
+        document.write(`${ppo} `)
+    }
+}
+
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 // -знайти наібльшу книжку.
 // - знайти книжку/ки з найбільшою кількістю жанрів
 // - знайти книжку/ки з найдовшою назвою
 // - знайти книжку/ки які писали 2 автори
 // - знайти книжку/ки які писав 1 автор
+
+console.log('масив книжок')
+let books = [
+    {
+        title: "Harry Potter and Philosopher's Stone",
+        pageCount: 223,
+        genre: 'Fantasy',
+        autors: ['J. K. Rowling']
+},
+    {
+        title: "Harry Potter and Chamber of Secrets",
+        pageCount: 251,
+        genre: 'Fantasy',
+        autors: ['J. K. Rowling']
+},
+    {
+        title: "Harry Potter and Prisoner of Azkaban",
+        pageCount: 317,
+        genre: 'Fantasy',
+        autors: ['J. K. Rowling']
+},
+    {
+        title: "marsianin",
+        pageCount: 201,
+        genre: 'Fantasy',
+        autors: ['M. Vinhranovsʹkyy', 'T. Shevchenko']
+},
+    {
+        title: "Zacharovana Desna",
+        pageCount: 219,
+        genre: 'filmstory',
+        autors: ['O. Dovzhenko']
+},
+
+];
+let biggestBook = 0;
+for (let book of books) {
+    let page = book.pageCount;
+    if (page > biggestBook) {
+        book = biggestBook}
+    console.log(biggestBook);
+}
