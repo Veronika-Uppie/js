@@ -52,6 +52,7 @@ for (const listOfItem of listOfItems) {
     document.write(`<ul> <li>${listOfItem}</li> </ul>`);
     }
 
+
 // -----------------------------------------------
 //
 //     Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -470,35 +471,37 @@ for (let ppo = 0; ppo < 100; ppo++) {
 // - знайти книжку/ки які писав 1 автор
 
 console.log('масив книжок')
+console.log('Найбільша книжка')
+
 let books = [
     {
         title: "Harry Potter and Philosopher's Stone",
         pageCount: 223,
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         autors: ['J. K. Rowling']
 },
     {
         title: "Harry Potter and Chamber of Secrets",
         pageCount: 251,
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         autors: ['J. K. Rowling']
 },
     {
         title: "Harry Potter and Prisoner of Azkaban",
         pageCount: 317,
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         autors: ['J. K. Rowling']
 },
     {
         title: "marsianin",
         pageCount: 201,
-        genre: 'Fantasy',
+        genre: ['Fantasy'],
         autors: ['M. Vinhranovsʹkyy', 'T. Shevchenko']
 },
     {
         title: "Zacharovana Desna",
         pageCount: 219,
-        genre: 'filmstory',
+        genre: ['filmstory', 'avtobiohrafiya'],
         autors: ['O. Dovzhenko']
 }
 ];
@@ -519,4 +522,90 @@ for (let book of books) {
 }
 console.log(maxBook)
 
+console.log('книжкa/ки з найбільшою кількістю жанрів')
 
+let maxGenre = 0;
+let maxGenreBook;
+for (let bookG of books) {
+    for (let genre in bookG) {
+        if (genre === 'genre') {
+
+            for (arr of genre) {
+                if (arr.length > maxGenre) {
+                    maxGenre = arr.length;
+                    console.log(maxGenre)
+                }
+            }
+            if (arr.length === maxGenre){
+                maxGenreBook = genre
+            }
+
+
+
+        }
+        }
+
+}
+console.log(maxGenreBook)
+
+
+
+
+
+
+// let maxGanre = 0;
+// let maxGanreBook;
+// for (let book of books) {
+//     for (let ganre in book) {
+//
+//         if (ganre === 'genre') {
+//                 if (ganre.length > maxGanre) {
+//                     maxGanre = ganre.length;
+//                 }
+//                 if (ganre.length === max){
+//                     maxGanreBook = book
+//                 }
+//         }
+//     }
+// }
+// console.log(maxGanreBook)
+//
+
+
+
+
+
+//let max = 0;
+// let maxBook;
+// for (let book of books) {
+//     for (let page in book) {
+//
+//         if (page === 'pageCount') {
+//                 if (page.length > max) {
+//                     max = page.length;
+//                 }
+//         }
+//         if (page.length === max){
+//             maxBook = book
+//     }
+// }
+// }
+// console.log(maxBook)
+//
+// console.log('книжкa/ки з найбільшою кількістю жанрів')
+// let maxGanre = 0;
+// let maxGanreBook;
+// for (let book of books) {
+//     for (let ganre in book) {
+//
+//         if (ganre === 'genre') {
+//             if (book[ganre] > maxGanre) {
+//                 maxGanre = book[ganre];
+//             }
+//         }
+//         if (book[ganre] === max){
+//             maxGanreBook = book
+//         }
+//     }
+// }
+// console.log(maxGanreBook)
