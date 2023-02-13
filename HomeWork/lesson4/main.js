@@ -91,8 +91,8 @@ function count_li(li,number) {
         i++;
     }
   document.write(`</ul>`);
-    return count_li;
 }
+
 let list = 'lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis dignissimos eligendi ex facere inventore itaque molestiae natus, necessitatibus neque nisi, non odio omnis quas quis, quos sint veniam voluptatem.';
 count_li(list, 10);
 
@@ -107,14 +107,9 @@ function create_list_by_arr(elements) {
         document.write(`<li>${element}</li>`)
     }
         document.write(`</ul>`);
-    return create_list_by_arr;
 }
 
 create_list_by_arr(arr);
-
-
-
-
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
@@ -156,12 +151,10 @@ function smallest_num (arr) {
         }
     }
     console.log(min);
-    return smallest_num;
 }
 smallest_num(num_arr);
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-
 
 console.log('функція сумує значення елементів масиву');
 
@@ -192,14 +185,11 @@ function swap(arr,index1,index2) {
             arr[index1] = arr[index2]
             arr[index2] = index3
             console.log(arr);
-            return swap;
         }
         if (index1 >= arr.length || index2 >= arr.length) {
             console.log('Error')
         }
-
     }
-
 }
 
 swap(arr1, 3, 0);
@@ -210,8 +200,6 @@ swap(arr1, 4, 0);
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 
 console.log('функція обміну валюти');
-
-
 
 function exchange(sumUAH,currencyValues,exchangeCurrency){
     for (let item of currencyValues){
