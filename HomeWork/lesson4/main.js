@@ -112,34 +112,84 @@ function create_list_by_arr(elements) {
 
 create_list_by_arr(arr);
 
-// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-let persons = [
-    {id: 1, name: 'vasya', age: 31},
-    {id: 2, name: 'petya', age: 30},
-    {id: 3, name: 'kolya', age: 29},
-    {id: 4, name: 'olya', age: 28},
-    {id: 5, name: 'max', age: 31}
-];
 
-function display_arr_el(arr) {
-    for (const item of arr) {
-        document.write(`<div>`);
-            for (let element in item) {
-                document.write(`<p>${element}</p>`)
-            }
-        document.write(`</div>`);
-    }
-    return display_arr_el;
-}
 
-display_arr_el(persons);
 
+// !!!!!!
+// // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+//
+// let persons = [
+//     {id: 1, name: 'vasya', age: 31},
+//     {id: 2, name: 'petya', age: 30},
+//     {id: 3, name: 'kolya', age: 29},
+//     {id: 4, name: 'olya', age: 28},
+//     {id: 5, name: 'max', age: 31}
+// ];
+//
+// function display_obj_arr(arr_of_obj) {
+//     for (const item of arr) {
+//         document.write(`<div>`);
+//             for (let element in item) {
+//                 document.write(`<p>${element}</p>`)
+//             }
+//         document.write(`</div>`);
+//     }
+//     return display_obj_arr;
+// }
+//
+// display_obj_arr(persons);
+//
 
 
 // - створити функцію яка повертає найменьше число з масиву
+
+console.log('функція повертає найменьше число з масиву');
+
+let num_arr = [1997, 1985, 1988, 1964, 2021, 1976, 2015, 1985, 2000]
+
+function smallest_num (arr) {
+    let min = Infinity;
+    for (let num of arr) {
+        if (num < min) {
+            min = num;
+        }
+    }
+    console.log(min);
+    return smallest_num;
+}
+smallest_num(num_arr);
+
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-// - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+
+
+console.log('функція сумує значення елементів масиву');
+
+let arr_of_num = [10, 10, 10, 20];
+
+function sum(arr) {
+    let sum = 0;
+    for (let num of arr) {
+        sum += num
+    }
+    console.log(sum);
+    return sum;
+}
+
+sum(arr_of_num);
+
+
+// - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+
+// console.log('функція місцями заняення у відповідних індексах');
+//
+// let arr1 = [11,22,33,44];
+// function swap(arr,index1,index2) {
+//
+// }
+
+
+
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
