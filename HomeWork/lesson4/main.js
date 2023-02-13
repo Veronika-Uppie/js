@@ -220,6 +220,9 @@ function exchange(sumUAH,currencyValues,exchangeCurrency){
             console.log(result);
             return result;
         }
+        else {
+            console.log('Error');
+        }
     }
 }
 
