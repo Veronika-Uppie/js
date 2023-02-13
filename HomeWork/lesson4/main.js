@@ -116,30 +116,30 @@ create_list_by_arr(arr);
 
 
 
-// !!!!!!
-// // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-//
-// let persons = [
-//     {id: 1, name: 'vasya', age: 31},
-//     {id: 2, name: 'petya', age: 30},
-//     {id: 3, name: 'kolya', age: 29},
-//     {id: 4, name: 'olya', age: 28},
-//     {id: 5, name: 'max', age: 31}
-// ];
-//
-// function display_obj_arr(arr_of_obj) {
-//     for (const item of arr) {
-//         document.write(`<div>`);
-//             for (let element in item) {
-//                 document.write(`<p>${element}</p>`)
-//             }
-//         document.write(`</div>`);
-//     }
-//     return display_obj_arr;
-// }
-//
-// display_obj_arr(persons);
-//
+// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+console.log("функція виводить масив об'єктів в документ")
+
+let persons = [
+    {id: 1, name: 'vasya', age: 31},
+    {id: 2, name: 'petya', age: 30},
+    {id: 3, name: 'kolya', age: 29},
+    {id: 4, name: 'olya', age: 28},
+    {id: 5, name: 'max', age: 31}
+];
+
+function display_arr(arr) {
+    for (let item of arr) {
+        document.write(`<div>`);
+        for (let itemKey in item) {
+            document.write(`<p>${itemKey}: ${item[itemKey]},</p>`);
+        }
+        document.write(`</div>`);
+    }
+
+}
+
+display_arr(persons);
 
 
 // - створити функцію яка повертає найменьше число з масиву
@@ -227,4 +227,6 @@ function exchange(sumUAH,currencyValues,exchangeCurrency){
 }
 
 exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD');
+
+
 
