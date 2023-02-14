@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HomeWork/lesson5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/lesson5/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/lesson5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson5/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1676199884431" duration="10247000" />
       <workItem from="1676282083663" duration="2548000" />
       <workItem from="1676295898098" duration="10118000" />
-      <workItem from="1676376609291" duration="2824000" />
+      <workItem from="1676376609291" duration="5712000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork">
       <created>1675246606476</created>
@@ -251,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676306136548</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="&#10;hw">
+      <created>1676389507762</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676389507762</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +272,7 @@
     <MESSAGE value="Виправила помилки в дз" />
     <MESSAGE value="add hw" />
     <MESSAGE value="hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw" />
+    <MESSAGE value="&#10;hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;hw" />
   </component>
 </project>

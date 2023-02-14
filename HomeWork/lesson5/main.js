@@ -23,20 +23,23 @@ console.log(area_of_cylinder(5, 20));
 
 console.log('функція виводить кожен елемент масивy');
 
-// let display_elements = (array) =>
-//     for (const item of array) {
-//         console.log(item);
-//     }
-//
-//
-// let users = [
-//     {name: 'vasya', age: 31, status: false},
-//     {name: 'petya', age: 30, status: true},
-//     {name: 'masha', age: 30, status: true},
-//     {name: 'olya', age: 31, status: false},
-//     {name: 'max', age: 31, status: true}
-// ];
-// display_elements(users);
+
+
+
+let display_elements = (array) => console.log(array[i]);
+i++;
+if (i < array.length) {
+    display_elements(array);
+}
+
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+display_elements(users);
 
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
@@ -102,9 +105,111 @@ document.write(`Список, побудованний по массиву`);
 // create_list_by_arr(arr);
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+console.log("функція виводить масив об'єктів в документ")
+//
+// let persons = [
+//     {id: 1, name: 'vasya', age: 31},
+//     {id: 2, name: 'petya', age: 30},
+//     {id: 3, name: 'kolya', age: 29},
+//     {id: 4, name: 'olya', age: 28},
+//     {id: 5, name: 'max', age: 31}
+// ];
+//
+// function display_arr(arr) {
+//     for (let item of arr) {
+//         document.write(`<div>`);
+//         for (let itemKey in item) {
+//             document.write(`<p>${itemKey}: ${item[itemKey]},</p>`);
+//         }
+//         document.write(`</div>`);
+//     }
+//
+// }
+//
+// display_arr(persons);
+
+
 // - створити функцію яка повертає найменьше число з масиву
+
+console.log('функція повертає найменьше число з масиву');
+
+// let num_arr = [1997, 1985, 1988, 1964, 2021, 1976, 2015, 1985, 2000]
+
+// function smallest_num (arr) {
+//     let min = Infinity;
+//     for (let num of arr) {
+//         if (num < min) {
+//             min = num;
+//         }
+//     }
+//     console.log(min);
+// }
+// smallest_num(num_arr);
+
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+
+console.log('функція сумує значення елементів масиву');
+
+// let arr_of_num = [10, 10, 10, 20];
+//
+// function sum(arr) {
+//     let sum = 0;
+//     for (let num of arr) {
+//         sum += num
+//     }
+//     console.log(sum);
+//     return sum;
+// }
+//
+// sum(arr_of_num);
+
+
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+
+
+console.log('функція міняє місцями занчення у відповідних індексах');
+//
+// let arr1 = [11,22,33,44];
+// function swap(arr,index1,index2) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i === index1) {
+//             let index3 = arr[index1]
+//             arr[index1] = arr[index2]
+//             arr[index2] = index3
+//             console.log(arr);
+//         }
+//         if (index1 >= arr.length || index2 >= arr.length) {
+//             console.log('Error')
+//         }
+//     }
+// }
+//
+// swap(arr1, 3, 0);
+// swap(arr1, 4, 0);
+
+
+
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
+console.log('функція обміну валюти');
+
+// function exchange(sumUAH,currencyValues,exchangeCurrency){
+//     for (let item of currencyValues){
+//         if (item.currency === exchangeCurrency) {
+//             let result = sumUAH / item.value
+//             console.log(result);
+//             return result;
+//         }
+//         else {
+//             console.log('Error');
+//         }
+//     }
+// }
+//
+// exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD');
+
+
+
