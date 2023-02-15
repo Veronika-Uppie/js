@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
+    <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="&#10;hw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork/lesson5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson5/main.js" afterDir="false" />
     </list>
@@ -73,7 +73,8 @@
       <workItem from="1676199884431" duration="10247000" />
       <workItem from="1676282083663" duration="2548000" />
       <workItem from="1676295898098" duration="10118000" />
-      <workItem from="1676376609291" duration="5712000" />
+      <workItem from="1676376609291" duration="5989000" />
+      <workItem from="1676463354710" duration="2434000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork">
       <created>1675246606476</created>
