@@ -21,6 +21,7 @@ console.log(area_of_cylinder(5, 20));
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
+console.log('функція виводить кожен елемент масивy')
 let display_elements = (array) => {
     for (const item of array) {
         console.log(item);
@@ -105,7 +106,7 @@ create_list_by_arr(arr);
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-console.log("функція виводить масив об'єктів в документ")
+document.write("функція виводить масив об'єктів в документ")
 
 let persons = [
     {id: 1, name: 'vasya', age: 31},
@@ -136,7 +137,7 @@ console.log('функція повертає найменьше число з м
 let num_arr = [1997, 1985, 1988, 1964, 2021, 1976, 2015, 1985, 2000]
 
 let smallest_num = (arr) => {
-    let min = Infinity;
+    let min = arr[0];
     for (let num of arr) {
         if (num < min) {
             min = num;
@@ -171,8 +172,8 @@ console.log('функція міняє місцями занчення у від
 
 let arr1 = [11,22,33,44];
 let swap = (arr,index1,index2)  => {
-    for (let i = 0; i < arr.length; i++) {
-        if (i === index1) {
+    for (let j = 0; j < arr.length; j++) {
+        if (j === index1) {
             let index3 = arr[index1]
             arr[index1] = arr[index2]
             arr[index2] = index3
