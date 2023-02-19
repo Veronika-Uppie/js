@@ -53,8 +53,12 @@ stringToarray(str_1);
 
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
 
-// let num_arr = [10,8,-7,55,987,-1011,0,1050,0];
+let num_arr = [10,8,-7,55,987,-1011,0,1050,0];
 
+let filter = num_arr.map((num) => {
+    return String(num);
+})
+console.log(filter);
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
@@ -83,16 +87,6 @@ sortNums(nums,'descending');
 sortNums(nums,'descen');
 
 
-
-
-// let sort = nums.sort((a, b) => a - b);
-// console.log(sort)
-
-
-
-
-
-
 // ==========================
 // - є масив
 // let coursesAndDurationArray = [
@@ -116,9 +110,6 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-// let sort_arr = coursesAndDurationArray.sort((a. b) => a-b);
-// console.log(sort_arr);
-
 let sort_arr = coursesAndDurationArray.sort((a, b) => {
     return a.monthDuration - b.monthDuration;
 })
@@ -127,6 +118,7 @@ console.log(sort_arr);
 
 let filter_dur = coursesAndDurationArray.filter(user => user.monthDuration > 5);
 console.log(filter_dur);
+
 
 let filter_map = coursesAndDurationArray.map((user, index) => {
    return {id: index + 1, title: user.title, monthDuration: user.monthDuration};
