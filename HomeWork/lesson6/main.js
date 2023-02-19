@@ -95,8 +95,10 @@ let coursesAndDurationArray = [
 // let filter1
 let filter2 = coursesAndDurationArray.filter(user => user.monthDuration > 5);
 console.log(filter2);
-// let filter3
-
+let filter3 = coursesAndDurationArray.map((user, index) => {
+   return {id: index + 1, title: user.title, monthDuration: user.monthDuration};
+});
+console.log(filter3);
 
 // =========================
 //     описати колоду карт (від 6 до туза без джокерів)
