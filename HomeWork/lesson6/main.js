@@ -138,7 +138,24 @@ console.log(filter_map);
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
-//
+
+let arr_card = [{suits: 'Hearts', id: 6}, {suits: 'Hearts', id: 7}, {suits: 'Hearts', id: 8},{suits: 'Hearts', id: 9},{suits: 'Hearts', id: 10},{suits: 'Hearts', id: T},
+                {suits: 'Tiles', id: 6}, {suits: 'Tiles', id: 7}, {suits: 'Tiles', id: 8},{suits: 'Tiles', id: 9},{suits: 'Tiles', id: 10},{suits: 'Tiles', id: T},
+                {suits: 'Clovers', id: 6}, {suits: 'Clovers', id: 7}, {suits: 'Clovers', id: 8},{suits: 'Clovers', id: 9},{suits: 'Clovers', id: 10},{suits: 'Clovers', id: T},
+                {suits: 'Pikes', id: 6}, {suits: 'Pikes', id: 7}, {suits: 'Pikes', id: 8},{suits: 'Pikes', id: 9},{suits: 'Pikes', id: 10},{suits: 'Pikes', id: T},
+
+];
+
+
+
+
+
+
+
+
+
+
+
 // =========================
 //
 //     Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
