@@ -35,10 +35,9 @@ console.log(str6.toLowerCase());
 
 
 let str = ' dirty string   '
-console.log (str.length);
-let p1 = str.replaceAll(' ', '')
-console.log(p1);
-console.log(p1.length);
+let str_cl = str.replaceAll(' ', '')
+            .replaceAll('y', 'y ')
+console.log(str_cl);
 
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
