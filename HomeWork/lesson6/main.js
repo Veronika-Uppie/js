@@ -61,12 +61,18 @@ stringToarray(str_1);
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
 
-// let sortNums = (direction) =>{
-//
-// }
-//
+let nums = [11,21,3];
+
+// let sortNums = (arr, direction);
+
+let sort = nums.sort((a, b) => a - b);
+console.log(sort)
+
+
 // sortNums(nums,'ascending');
 // sortNums(nums,'descending');
+
+
 
 // ==========================
 // - є масив
@@ -82,7 +88,6 @@ stringToarray(str_1);
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 // -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
 
-
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
@@ -92,13 +97,22 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-// let filter1
-let filter2 = coursesAndDurationArray.filter(user => user.monthDuration > 5);
-console.log(filter2);
-let filter3 = coursesAndDurationArray.map((user, index) => {
+// let sort_arr = coursesAndDurationArray.sort((a. b) => a-b);
+// console.log(sort_arr);
+
+let sort_arr = coursesAndDurationArray.sort((a, b) => {
+    return a.monthDuration - b.monthDuration;
+})
+console.log(sort_arr);
+
+
+let filter_dur = coursesAndDurationArray.filter(user => user.monthDuration > 5);
+console.log(filter_dur);
+
+let filter_map = coursesAndDurationArray.map((user, index) => {
    return {id: index + 1, title: user.title, monthDuration: user.monthDuration};
 });
-console.log(filter3);
+console.log(filter_map);
 
 // =========================
 //     описати колоду карт (від 6 до туза без джокерів)
