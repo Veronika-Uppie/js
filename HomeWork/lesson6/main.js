@@ -36,7 +36,7 @@ console.log(str6.toLowerCase());
 
 let str = ' dirty string   '
 let str_cl = str.replaceAll(' ', '')
-            .replaceAll('y', 'y ')
+                .replaceAll('y', 'y ')
 console.log(str_cl);
 
 
@@ -63,14 +63,33 @@ stringToarray(str_1);
 
 let nums = [11,21,3];
 
-// let sortNums = (arr, direction);
+let sortNums = (arr, direction) => {
+    if (direction === 'ascending') {
+        arr.sort((a, b) => {
+            return a - b;
+        })
+    } else if (direction === 'descending') {
+        arr.sort((a, b) => {
+            return b - a;
+        })
+    } else {
+        console.log('Error')
+    }
+    console.log(arr);
+}
 
-let sort = nums.sort((a, b) => a - b);
-console.log(sort)
+sortNums(nums,'ascending');
+sortNums(nums,'descending');
+sortNums(nums,'descen');
 
 
-// sortNums(nums,'ascending');
-// sortNums(nums,'descending');
+
+
+// let sort = nums.sort((a, b) => a - b);
+// console.log(sort)
+
+
+
 
 
 
