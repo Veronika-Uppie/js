@@ -138,6 +138,9 @@ console.log(filter_map);
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
+//
+
+
 
 let arr_card = [{suits: 'Hearts', id: 6}, {suits: 'Hearts', id: 7}, {suits: 'Hearts', id: 8},{suits: 'Hearts', id: 9},{suits: 'Hearts', id: 10},{suits: 'Hearts', id: T},
                 {suits: 'Tiles', id: 6}, {suits: 'Tiles', id: 7}, {suits: 'Tiles', id: 8},{suits: 'Tiles', id: 9},{suits: 'Tiles', id: 10},{suits: 'Tiles', id: T},
@@ -165,6 +168,22 @@ let arr_card = [{suits: 'Hearts', id: 6}, {suits: 'Hearts', id: 7}, {suits: 'Hea
 //     hearts:[],
 //     clubs:[]
 // }
+
+console.log(arr_card.reduce((accumulator, value) => {
+    if (value.cardSuit === spades) {
+        accumulator.spades.push(value);
+    } else if (value.cardSuit === diamonds) {
+        accumulator.diamonds.push(value);
+    } else if (value.cardSuit === hearts) {
+        accumulator.hearts.push(value);
+    } else  {
+        accumulator.clubs.push(value);
+    }
+    return accumulator;
+}, {spades:[], diamonds:[], hearts:[], clubs:[]}));
+
+
+
 // =========================
 //     взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
