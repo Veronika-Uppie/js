@@ -29,7 +29,6 @@ console.log(str6.toLowerCase());
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
-
 let str = ' dirty string   '
 let str_cl = str.replaceAll(' ', '')
                 .replaceAll('y', 'y ')
@@ -80,8 +79,6 @@ let sortNums = (arr, direction) => {
 
 sortNums(nums,'ascending');
 sortNums(nums,'descending');
-sortNums(nums,'descen');
-
 
 // ==========================
 // - є масив
@@ -273,14 +270,15 @@ let coursesArray = [
     }
 ];
 
-console.log(coursesArray.reduce((accumulator, value) => {
-    if (value => value.some === 'sass') {
-        accumulator.sass.push(value);
-    } else if (value => value.some === 'docker') {
-        accumulator.docker.push(value);
-    }
-    return accumulator;
-}, {sass:[], docker:[]}));
+// console.log(coursesArray.reduce((accumulator, value) => {
+//     if (value => value.some === 'sass') {
+//         accumulator.sass.push(value);
+//     } else if (value => value.some === 'docker') {
+//         accumulator.docker.push(value);
+//     }
+//     return accumulator;
+// }, {sass:[], docker:[]}));
+
 
 
 
