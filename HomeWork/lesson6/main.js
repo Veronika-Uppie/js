@@ -139,7 +139,7 @@ console.log(filter_map);
 //         value: '', // '6'-'10','ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
-//
+
 
 
 let arr_cards = [{cardSuit: 'heart', value: 6, color: 'red'}, {cardSuit: 'heart', value: 7, color: 'red'}, {cardSuit: 'heart', value: 8, color: 'red'},{cardSuit: 'heart', value: 9, color: 'red'},{cardSuit: 'heart', value: 10, color: 'red'},{cardSuit: 'heart', value: 'ace', color: 'red'}, {cardSuit: 'heart', value: 'jack', color: 'red'}, {cardSuit: 'heart', value: 'queen', color: 'red'}, {cardSuit: 'heart', value: 'king', color: 'red'},
@@ -147,18 +147,29 @@ let arr_cards = [{cardSuit: 'heart', value: 6, color: 'red'}, {cardSuit: 'heart'
                 {cardSuit: 'spade', value: 6, color: 'black'}, {cardSuit: 'spade', value: 7, color: 'black'}, {cardSuit: 'spade', value: 8, color: 'black'},{cardSuit: 'spade', value: 9, color: 'black'},{cardSuit: 'spade', value: 10, color: 'black'}, {cardSuit: 'spade', value: 'ace', color: 'black'}, {cardSuit: 'spade', value: 'jack', color: 'black'}, {cardSuit: 'spade', value: 'queen', color: 'black'}, {cardSuit: 'spade', value: 'king', color: 'black'},
                 {cardSuit: 'clubs', value: 6, color: 'black'}, {cardSuit: 'clubs', value: 7, color: 'black'}, {cardSuit: 'clubs', value: 8, color: 'black'},{cardSuit: 'clubs', value: 9, color: 'black'}, {cardSuit: 'clubs', value: 10, color: 'black'}, {cardSuit: 'clubs', value: 'ace', color: 'black'}, {cardSuit: 'clubs', value: 'jack', color: 'black'}, {cardSuit: 'clubs', value: 'queen', color: 'black'}, {cardSuit: 'clubs', value: 'king', color: 'black'}
 ];
-
+console.log('finde spade ace');
 let finde_spade_ace = arr_cards.find(value => value.cardSuit === 'spade' && value.value === 'ace');
 console.log(finde_spade_ace);
 
-// let finde_all_6 = arr_cards.forEach(value => value.value === 6);
-// console.log(finde_all_6);
+console.log('finde all 6');
 
-// coursesArray.forEach(value => value.modules === 'sass');
+let finde_all_6 = arr_cards.filter(value => value.value === 6);
+console.log(finde_all_6);
 
+console.log('finde red');
 
+let finde_all_red = arr_cards.filter(value => value.color === 'red');
+console.log(finde_all_red);
 
+console.log('finde diamond');
 
+let finde_diamond = arr_cards.filter(value => value.cardSuit === 'diamond');
+console.log(finde_diamond);
+
+console.log('finde clubs');
+
+let finde_clubs = arr_cards.filter(value => value.cardSuit === 'clubs' && value.value !== 6 && value.value !== 7 && value.value !== 8);
+console.log(finde_clubs);
 
 
 // =========================
@@ -170,7 +181,9 @@ console.log(finde_spade_ace);
 //     hearts:[],
 //     clubs:[]
 // }
-console.log('dvdsd');
+
+console.log('упакуванні карти по "мастях"');
+
 console.log(arr_cards.reduce((accumulator, value) => {
     if (value.cardSuit === 'spade') {
         accumulator.spades.push(value);
