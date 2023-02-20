@@ -270,14 +270,11 @@ let coursesArray = [
     }
 ];
 
-// console.log(coursesArray.reduce((accumulator, value) => {
-//     if (value => value.some === 'sass') {
-//         accumulator.sass.push(value);
-//     } else if (value => value.some === 'docker') {
-//         accumulator.docker.push(value);
-//     }
-//     return accumulator;
-// }, {sass:[], docker:[]}));
+
+console.log(coursesArray.filter((item) => item.modules.includes('sass')));
+
+
+console.log(coursesArray.filter((item) => item.modules.includes('docker')));
 
 
 
