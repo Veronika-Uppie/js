@@ -29,10 +29,6 @@ console.log(str6.toLowerCase());
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
-// !!!!!!!
-
-
-
 
 let str = ' dirty string   '
 let str_cl = str.replaceAll(' ', '')
@@ -204,23 +200,8 @@ console.log(arr_cards.reduce((accumulator, value) => {
 // --написати пошук всіх об'єктів, в який в modules є sass
 // --написати пошук всіх об'єктів, в який в modules є docker
 
+console.log("пошук всіх об'єктів");
 
-
-// coursesArray.forEach(function (value) {
-//     console.log(value);
-// });
-
-
-
-
-
-
-
-
-
-// coursesArray.forEach(value => value.modules === 'sass');
-
-console.log()
 
 let coursesArray = [
     {
@@ -292,14 +273,14 @@ let coursesArray = [
     }
 ];
 
-console.log('sdvsdv')
 console.log(coursesArray.reduce((accumulator, value) => {
-    if (value => value.modules === 'sass') {
+    if (value => value.some === 'sass') {
         accumulator.sass.push(value);
-    } else if (value => value.modules === 'docker') {
+    } else if (value => value.some === 'docker') {
         accumulator.docker.push(value);
     }
     return accumulator;
 }, {sass:[], docker:[]}));
+
 
 
