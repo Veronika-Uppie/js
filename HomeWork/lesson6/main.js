@@ -125,6 +125,7 @@ let filter_map = coursesAndDurationArray.map((user, index) => {
 });
 console.log(filter_map);
 
+
 // =========================
 //     описати колоду карт (від 6 до туза без джокерів)
 // - знайти піковий туз
@@ -135,24 +136,25 @@ console.log(filter_map);
 //
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
-//         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+//         value: '', // '6'-'10','ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
 //
 
 
-
-let arr_card = [{suits: 'Hearts', id: 6}, {suits: 'Hearts', id: 7}, {suits: 'Hearts', id: 8},{suits: 'Hearts', id: 9},{suits: 'Hearts', id: 10},{suits: 'Hearts', id: T},
-                {suits: 'Tiles', id: 6}, {suits: 'Tiles', id: 7}, {suits: 'Tiles', id: 8},{suits: 'Tiles', id: 9},{suits: 'Tiles', id: 10},{suits: 'Tiles', id: T},
-                {suits: 'Clovers', id: 6}, {suits: 'Clovers', id: 7}, {suits: 'Clovers', id: 8},{suits: 'Clovers', id: 9},{suits: 'Clovers', id: 10},{suits: 'Clovers', id: T},
-                {suits: 'Pikes', id: 6}, {suits: 'Pikes', id: 7}, {suits: 'Pikes', id: 8},{suits: 'Pikes', id: 9},{suits: 'Pikes', id: 10},{suits: 'Pikes', id: T},
-
+let arr_cards = [{cardSuit: 'heart', value: 6, color: 'red'}, {cardSuit: 'heart', value: 7, color: 'red'}, {cardSuit: 'heart', value: 8, color: 'red'},{cardSuit: 'heart', value: 9, color: 'red'},{cardSuit: 'heart', value: 10, color: 'red'},{cardSuit: 'heart', value: 'ace', color: 'red'}, {cardSuit: 'heart', value: 'jack', color: 'red'}, {cardSuit: 'heart', value: 'queen', color: 'red'}, {cardSuit: 'heart', value: 'king', color: 'red'},
+                {cardSuit: 'diamond', value: 6, color: 'red'}, {cardSuit: 'diamond', value: 7, color: 'red'}, {cardSuit: 'diamond', value: 8, color: 'red'},{cardSuit: 'diamond', value: 9, color: 'red'},{cardSuit: 'diamond', value: 10, color: 'red'},{cardSuit: 'diamond', value: 'ace', color: 'red'}, {cardSuit: 'diamond', value: 'jack', color: 'red'}, {cardSuit: 'diamond', value: 'queen', color: 'red'}, {cardSuit: 'diamond', value: 'king', color: 'red'},
+                {cardSuit: 'spade', value: 6, color: 'black'}, {cardSuit: 'spade', value: 7, color: 'black'}, {cardSuit: 'spade', value: 8, color: 'black'},{cardSuit: 'spade', value: 9, color: 'black'},{cardSuit: 'spade', value: 10, color: 'black'}, {cardSuit: 'spade', value: 'ace', color: 'black'}, {cardSuit: 'spade', value: 'jack', color: 'black'}, {cardSuit: 'spade', value: 'queen', color: 'black'}, {cardSuit: 'spade', value: 'king', color: 'black'},
+                {cardSuit: 'clubs', value: 6, color: 'black'}, {cardSuit: 'clubs', value: 7, color: 'black'}, {cardSuit: 'clubs', value: 8, color: 'black'},{cardSuit: 'clubs', value: 9, color: 'black'}, {cardSuit: 'clubs', value: 10, color: 'black'}, {cardSuit: 'clubs', value: 'ace', color: 'black'}, {cardSuit: 'clubs', value: 'jack', color: 'black'}, {cardSuit: 'clubs', value: 'queen', color: 'black'}, {cardSuit: 'clubs', value: 'king', color: 'black'}
 ];
 
+let finde_spade_ace = arr_cards.find(value => value.cardSuit === 'spade' && value.value === 'ace');
+console.log(finde_spade_ace);
 
+// let finde_all_6 = arr_cards.forEach(value => value.value === 6);
+// console.log(finde_all_6);
 
-
-
+// coursesArray.forEach(value => value.modules === 'sass');
 
 
 
@@ -168,13 +170,13 @@ let arr_card = [{suits: 'Hearts', id: 6}, {suits: 'Hearts', id: 7}, {suits: 'Hea
 //     hearts:[],
 //     clubs:[]
 // }
-
-console.log(arr_card.reduce((accumulator, value) => {
-    if (value.cardSuit === spades) {
+console.log('dvdsd');
+console.log(arr_cards.reduce((accumulator, value) => {
+    if (value.cardSuit === 'spade') {
         accumulator.spades.push(value);
-    } else if (value.cardSuit === diamonds) {
+    } else if (value.cardSuit === 'diamond') {
         accumulator.diamonds.push(value);
-    } else if (value.cardSuit === hearts) {
+    } else if (value.cardSuit === 'heart') {
         accumulator.hearts.push(value);
     } else  {
         accumulator.clubs.push(value);
@@ -188,3 +190,103 @@ console.log(arr_card.reduce((accumulator, value) => {
 //     взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 // --написати пошук всіх об'єктів, в який в modules є sass
 // --написати пошук всіх об'єктів, в який в modules є docker
+
+
+
+// coursesArray.forEach(function (value) {
+//     console.log(value);
+// });
+
+
+
+
+
+
+
+
+
+// coursesArray.forEach(value => value.modules === 'sass');
+
+console.log()
+
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+
+console.log('sdvsdv')
+console.log(coursesArray.reduce((accumulator, value) => {
+    if (value => value.modules === 'sass') {
+        accumulator.sass.push(value);
+    } else if (value => value.modules === 'docker') {
+        accumulator.docker.push(value);
+    }
+    return accumulator;
+}, {sass:[], docker:[]}));
+
+
