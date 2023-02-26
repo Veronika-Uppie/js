@@ -49,16 +49,16 @@ console.log(sortUser);
 
 
 let client = [
-    new Client(106, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', 80173645298, ['pie', 'salt', 'sauce', 'juice', 'tea']),
-    new Client(905, 'Petya', 'Melnyk', 'PetyaMelnyk.gmail.com', 80173645298, ['tea', 'salt', 'juice']),
-    new Client(304, 'Vera', 'Boyko', 'VeraBoyko.gmail.com', 80173645298, ['tea', 'pie', 'beef', 'bean']),
-    new Client(408, 'Ira', 'Kovalenko', 'IraKovalenko.gmail.com', 80173645298, ['tea', 'salt', 'sauce']),
-    new Client(307, 'Igor', 'Melnyk', 'IgorMelnyk.gmail.com', 80173645298, ['pasta', 'juice']),
-    new Client(800, 'Vasya', 'Shevchenko', 'Vasya515.gmail.com', 80173645298, ['tea', 'sauce', 'pasta']),
-    new Client(205, 'Viktor', 'Melnyk', 'Melnyk1322.gmail.com', 80173645298, ['bean', 'salt', 'bean', 'pie']),
-    new Client(701, 'Vera', 'Boyko', 'Boyko863.gmail.com', 80173645298, ['tea', 'salt']),
-    new Client(805, 'Vasya', 'Shevchenko', 'Shevchenko488.gmail.com', 80173645298, ['tea', 'sauce', 'juice']),
-    new Client(100, 'Petya', 'Koval', 'PetyaKoval.gmail.com', 80173645298, ['tea', 'pasta', 'juice'])
+    new Client(106, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', '+380173645298', ['pie', 'salt', 'sauce', 'juice', 'tea']),
+    new Client(905, 'Petya', 'Melnyk', 'PetyaMelnyk.gmail.com', '+380173645298', ['tea', 'salt', 'juice']),
+    new Client(304, 'Vera', 'Boyko', 'VeraBoyko.gmail.com', '+380173645298', ['tea', 'pie', 'beef', 'bean']),
+    new Client(408, 'Ira', 'Kovalenko', 'IraKovalenko.gmail.com', '+380173645298', ['tea', 'salt', 'sauce']),
+    new Client(307, 'Igor', 'Melnyk', 'IgorMelnyk.gmail.com', '+380173645298', ['pasta', 'juice']),
+    new Client(800, 'Vasya', 'Shevchenko', 'Vasya515.gmail.com', '+380173645298', ['tea', 'sauce', 'pasta']),
+    new Client(205, 'Viktor', 'Melnyk', 'Melnyk1322.gmail.com', '+380173645298', ['bean', 'salt', 'bean', 'pie']),
+    new Client(701, 'Vera', 'Boyko', 'Boyko863.gmail.com', '+380173645298', ['tea', 'salt']),
+    new Client(805, 'Vasya', 'Shevchenko', 'Shevchenko488.gmail.com', '+380173645298', ['tea', 'sauce', 'juice']),
+    new Client(100, 'Petya', 'Koval', 'PetyaKoval.gmail.com', '+380173645298', ['tea', 'pasta', 'juice'])
 ]
 console.log(client);
 
@@ -89,10 +89,12 @@ function Car(model, manufacturer, value, maxSpeed, engCapacity) {
         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`);
     };
     this.info = function() {
-        console.log(`model - ${this.model} \n manufacturer - ${this.manufacturer} \n year - ${this.value} \n maxSpeed - ${this.maxSpeed} \n engCapacity - ${this.engCapacity}`)
-        // for (let item in this) {
-        //         console.log(`${item} - ${this[item]}, `);
-        // }
+        console.log('Info about car:')
+        for (let item in this) {
+            if (typeof item !== 'function') {
+                console.log(`${item} - ${this[item]}, `);
+            }
+        }
     }
     this.increaseMaxSpeed = function(newSpeed){
         this.maxSpeed = newSpeed;
@@ -146,15 +148,18 @@ let Cars = class {
         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`);
     };
     info() {
-        console.log(`model - ${this.model} \n manufacturer - ${this.manufacturer} \n year - ${this.value} \n maxSpeed - ${this.maxSpeed} \n engCapacity - ${this.engCapacity}`)
-        // for (let item in this) {
-        //         console.log(`${item} - ${this[item]}, `);
-        // }
+        console.log('Info about car:')
+        for (let item in this) {
+            if (typeof item !== 'function') {
+                console.log(`${item} - ${this[item]}, `);
+            }
+        }
     }
+
     increaseMaxSpeed(newSpeed){
         this.maxSpeed = newSpeed;
     }
-    changeYear = function(newValue){
+    changeYear(newValue){
         this.value = newValue;
     }
     addDriver(driver) {
