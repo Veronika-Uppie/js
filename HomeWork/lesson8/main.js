@@ -13,8 +13,6 @@ let User = class {
 }
 
 
-
-
 let user = [
     new User(1486, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', 80173645298 ),
     new User(9855, 'Petya', 'Melnyk', 'PetyaMelnyk.gmail.com', 80173645298 ),
@@ -85,8 +83,6 @@ console.log(sortClient);
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
 
-
-
 function Car(model, manufacturer, value, maxSpeed, engCapacity) {
     this.model = model;
     this.manufacturer = manufacturer;
@@ -108,6 +104,9 @@ function Car(model, manufacturer, value, maxSpeed, engCapacity) {
     this.changeYear = function(newValue){
         this.value = newValue;
     }
+    this.addDriver = function (driver) {
+        this.driver = driver;
+    }
 
 
 
@@ -121,6 +120,8 @@ car1.increaseMaxSpeed(220)
 console.log(`New Max Speed = ${car1.maxSpeed}`)
 car1.changeYear(2020);
 console.log(`New Year = ${car1.value}`)
+car1.addDriver({name: 'Vaysa', age: 33});
+console.log(car1.driver);
 
 
 
@@ -135,10 +136,98 @@ console.log(`New Year = ${car1.value}`)
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-//
-//
-//
+
+
+let Cars = class {
+    constructor(model, manufacturer, value, maxSpeed, engCapacity) {
+        this.model = model;
+        this.manufacturer = manufacturer;
+        this.value = value;
+        this.maxSpeed = maxSpeed;
+        this.engCapacity = engCapacity;
+    }
+    drive() {
+        console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`);
+    };
+    info() {
+        console.log(`model - ${this.model} \n manufacturer - ${this.manufacturer} \n year - ${this.value} \n maxSpeed - ${this.maxSpeed} \n engCapacity - ${this.engCapacity}`)
+        // for (let item in this) {
+        //         console.log(`${item} - ${this[item]}, `);
+        // }
+    }
+    increaseMaxSpeed(newSpeed){
+        this.maxSpeed = newSpeed;
+    }
+    changeYear = function(newValue){
+        this.value = newValue;
+    }
+    addDriver(driver) {
+        this.driver = driver;
+    }
+
+}
+
+let car2 = new Cars('Toyota Camry','Toyota Motor Corporation', 2019, 210, '2.5' )
+
+car2.drive();
+car2.info();
+car2.increaseMaxSpeed(225)
+console.log(`New Max Speed = ${car2.maxSpeed}`)
+car2.changeYear(2022);
+console.log(`New Year = ${car2.value}`)
+car2.addDriver({name: 'Petya', age: 26});
+console.log(car2.driver);
+
+
+
+
+
+
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+
+
+let Cinderella = function (name, age, size) {
+    this.name = name;
+    this.age = age;
+    this.size = size;
+}
+let cinderellas = [
+    new Cinderella('Ella', 19, 36),
+    new Cinderella('Drizella', 23, 41),
+    new Cinderella('Anastasiya', 32, 40),
+    new Cinderella('Milana', 30, 38),
+    new Cinderella('Zlata', 15, 39),
+    new Cinderella('Daryna', 31, 38),
+    new Cinderella('Solomiya', 25, 41),
+    new Cinderella('Viktoriya', 19, 39),
+    new Cinderella('Dariya', 16, 37),
+    new Cinderella('Mariya', 25, 38)
+]
+
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+
+let Prince =  class {
+    constructor(name, age, size) {
+        this.name = name;
+        this.age = age;
+        this.size = size;
+    }
+}
+ let princeCharming = new Prince('Charming', 21, 36);
+
+
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+
+for (let cinderella of cinderellas) {
+    if (cinderella.size === princeCharming.size) {
+        console.log(` ${cinderella.name} повинна бути з принцом`)
+    }
+}
+
+
+
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+let findeCinderella = cinderellas.find(value => value.size === princeCharming.size);
+console.log( `${findeCinderella.name} повинна бути з принцом`);
+
