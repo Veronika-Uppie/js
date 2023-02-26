@@ -1,7 +1,6 @@
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 
-
     function User (id, name, surname , email, phone) {
         this.id = id;
         this.name = name;
@@ -11,16 +10,16 @@
     };
 
 let user = [
-    new User(1486, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', 80173645298 ),
-    new User(9855, 'Petya', 'Melnyk', 'PetyaMelnyk.gmail.com', 80173645298 ),
-    new User(3254, 'Vera', 'Boyko', 'VeraBoyko.gmail.com', 80173645298 ),
-    new User(4358, 'Ira', 'Kovalenko', 'IraKovalenko.gmail.com', 80173645298 ),
-    new User(3887, 'Igor', 'Melnyk', 'IgorMelnyk.gmail.com', 80173645298 ),
-    new User(8310, 'Vasya', 'Shevchenko', 'Vasya515.gmail.com', 80173645298 ),
-    new User(2545, 'Viktor', 'Melnyk', 'Melnyk1322.gmail.com', 80173645298 ),
-    new User(7831, 'Vera', 'Boyko', 'Boyko863.gmail.com', 80173645298 ),
-    new User(8675, 'Vasya', 'Shevchenko', 'Shevchenko488.gmail.com', 80173645298 ),
-    new User(1020, 'Petya', 'Koval', 'PetyaKoval.gmail.com', 80173645298 ),
+    new User(1486, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', '+380173645298' ),
+    new User(9855, 'Petya', 'Melnyk', 'PetyaMelnyk.gmail.com', '+380173645298' ),
+    new User(3254, 'Vera', 'Boyko', 'VeraBoyko.gmail.com', '+380173645298' ),
+    new User(4358, 'Ira', 'Kovalenko', 'IraKovalenko.gmail.com', '+380173645298' ),
+    new User(3887, 'Igor', 'Melnyk', 'IgorMelnyk.gmail.com', '+380173645298' ),
+    new User(8310, 'Vasya', 'Shevchenko', 'Vasya515.gmail.com', '+380173645298' ),
+    new User(2545, 'Viktor', 'Melnyk', 'Melnyk1322.gmail.com', '+380173645298' ),
+    new User(7831, 'Vera', 'Boyko', 'Boyko863.gmail.com', '+380173645298' ),
+    new User(8675, 'Vasya', 'Shevchenko', 'Shevchenko488.gmail.com', '+380173645298' ),
+    new User(1020, 'Petya', 'Koval', 'PetyaKoval.gmail.com', '+380173645298' ),
 ]
 
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
@@ -174,11 +173,7 @@ console.log(car2.driver);
 
 
 
-
-
-
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
-
 
 let Cinderella = function (name, age, size) {
     this.name = name;
@@ -217,7 +212,6 @@ for (let cinderella of cinderellas) {
         console.log(` ${cinderella.name} повинна бути з принцом`)
     }
 }
-
 
 
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
