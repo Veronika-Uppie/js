@@ -91,7 +91,7 @@ function Car(model, manufacturer, value, maxSpeed, engCapacity) {
     this.info = function() {
         console.log('Info about car:')
         for (let item in this) {
-            if (typeof item !== 'function') {
+            if (typeof this[item] !== 'function') {
                 console.log(`${item} - ${this[item]}, `);
             }
         }
@@ -105,10 +105,8 @@ function Car(model, manufacturer, value, maxSpeed, engCapacity) {
     this.addDriver = function (driver) {
         this.driver = driver;
     }
-
-
-
 }
+
 
 let car1 = new Car('Audi Q7','Audi AG', 2008, 216, '3.0' )
 
@@ -120,11 +118,6 @@ car1.changeYear(2020);
 console.log(`New Year = ${car1.value}`)
 car1.addDriver({name: 'Vaysa', age: 33});
 console.log(car1.driver);
-
-
-
-
-
 
 
 // - (Те саме, тільки через клас)
