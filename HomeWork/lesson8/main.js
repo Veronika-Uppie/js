@@ -2,16 +2,13 @@
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 
 
-let User = class {
-    constructor(id, name, surname , email, phone) {
+    function User (id, name, surname , email, phone) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.phone = phone;
     };
-}
-
 
 let user = [
     new User(1486, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', 80173645298 ),
@@ -45,13 +42,12 @@ console.log(sortUser);
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 // створити пустий масив, наповнити його 10 об'єктами Client
 
-class Client extends User {
-    constructor(id, name, surname , email, phone, order) {
-        super(id, name, surname , email, phone);
-        this.order = order;
+    function Client (id, name, surname , email, phone, order) {
+        User.apply(this, arguments);
+       this.order = order;
     }
 
-}
+
 let client = [
     new Client(106, 'Vasya', 'Shevchenko', 'VasyaShevchenko.gmail.com', 80173645298, ['pie', 'salt', 'sauce', 'juice', 'tea']),
     new Client(905, 'Petya', 'Melnyk', 'PetyaMelnyk.gmail.com', 80173645298, ['tea', 'salt', 'juice']),
