@@ -9,7 +9,6 @@ let block1 = document.createElement('div');
 block1.innerText = 'І на оновленій землі \n врага не буде, супостата, \n а буде син, і буде мати, \n і будуть люде на землі \n _  '
 block1.className = 'wrap collapse alpha beta ';
 block1.style.background = 'silver';
-block1.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png')";
 document.body.append(block1);
 
 
@@ -121,11 +120,19 @@ let simpsons = [
     },
 ];
 for (let simpson of simpsons) {
+
+
     let simpsonBlock = document.createElement('div');
     simpsonBlock.className = 'member';
+    simpsonBlock.style.display = 'flex';
+    // simpsonBlock.style.flexDirection = 'column'
+    simpsonBlock.style.justifyContent = 'space-between';
+
+
 
     let title = document.createElement('h1');
     title.innerText = ` ${simpson.name} ${simpson.surname} `;
+    title.style.fontSize = '10 px';
 
     let age = document.createElement('h2')
     age.innerText = `${simpson.age} years old `;
@@ -134,7 +141,6 @@ for (let simpson of simpsons) {
     let photo = document.createElement('img')
         photo.src = `${simpson.photo}`;
         document.body.append(photo);
-
 
 
 
