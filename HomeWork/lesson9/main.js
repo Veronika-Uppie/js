@@ -6,9 +6,12 @@
 
 
 let block1 = document.createElement('div');
-block1.innerText = 'sdmvosmdsmdcmsdlcs;lcs;lmcsdmc'
-block1.className = 'wrap collapse alpha beta';
+block1.innerText = 'І на оновленій землі \n врага не буде, супостата, \n а буде син, і буде мати, \n і будуть люде на землі \n _  '
+block1.className = 'wrap collapse alpha beta ';
 block1.style.background = 'silver';
+block1.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png')";
+document.body.append(block1);
+
 
 
 
@@ -122,14 +125,26 @@ for (let simpson of simpsons) {
     simpsonBlock.className = 'member';
 
     let title = document.createElement('h1');
-    title.innerText = simpson.title;
-    title.className = 'heading';
+    title.innerText = ` ${simpson.name} ${simpson.surname} `;
 
-    let p = document.createElement('p')
-    p.innerText = `${simpson.monthDuration}`;
-    p.className = 'description';
+    let age = document.createElement('h2')
+    age.innerText = `${simpson.age} years old `;
 
-    simpsonBlock.append(title, p);
+
+    let photo = document.createElement('img')
+        photo.src = `${simpson.photo}`;
+        document.body.append(photo);
+
+
+
+
+    let info = document.createElement('p')
+    info.innerText = `${simpson.info}`;
+
+
+
+
+    simpsonBlock.append(title, age, info, photo);
 
     document.body.appendChild(simpsonBlock);}
 
