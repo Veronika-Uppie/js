@@ -9,6 +9,8 @@ let block1 = document.createElement('div');
 block1.innerText = 'І на оновленій землі \n врага не буде, супостата, \n а буде син, і буде мати, \n і будуть люде на землі \n _  '
 block1.className = 'wrap collapse alpha beta ';
 block1.style.background = 'silver';
+block1.style.fontSize = '36px';
+block1.style.color = 'white';
 document.body.append(block1);
 
 
@@ -18,7 +20,17 @@ document.body.append(block1);
 //     ['Main','Products','About us','Contacts']
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
 
+let arr = ['Main','Products','About us','Contacts'];
 
+let ulArr = document.createElement('ul');
+
+for (let string of arr) {
+    let liArr = document.createElement('li');
+    liArr.innerText = `${string}`;
+    ulArr.append(liArr);
+}
+
+document.body.appendChild(ulArr);
 
 
 
@@ -121,38 +133,35 @@ let simpsons = [
 ];
 for (let simpson of simpsons) {
 
-
     let simpsonBlock = document.createElement('div');
     simpsonBlock.className = 'member';
     simpsonBlock.style.display = 'flex';
-    // simpsonBlock.style.flexDirection = 'column'
-    simpsonBlock.style.justifyContent = 'space-between';
-
-
+    simpsonBlock.style.margin = '10px';
+    simpsonBlock.style.borderStyle = 'solid';
+    simpsonBlock.style.borderColor = 'silver';
+    simpsonBlock.style.borderRadius = '10px';
 
     let title = document.createElement('h1');
     title.innerText = ` ${simpson.name} ${simpson.surname} `;
-    title.style.fontSize = '10 px';
+    title.style.margin = '10px';
 
     let age = document.createElement('h2')
     age.innerText = `${simpson.age} years old `;
-
+    age.style.margin = '10px';
 
     let photo = document.createElement('img')
         photo.src = `${simpson.photo}`;
-        document.body.append(photo);
-
-
+        photo.style.height = '250px';
+        photo.style.margin = '10px';
 
     let info = document.createElement('p')
     info.innerText = `${simpson.info}`;
-
-
-
+    info.style.margin = '10px';
 
     simpsonBlock.append(title, age, info, photo);
 
-    document.body.appendChild(simpsonBlock);}
+    document.body.appendChild(simpsonBlock);
+}
 
 
 
