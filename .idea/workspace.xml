@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HomeWork/HW9/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/HW9/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/lesson9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson9/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +86,7 @@
       <workItem from="1677605947870" duration="23364000" />
       <workItem from="1677659034553" duration="7861000" />
       <workItem from="1677685511260" duration="5861000" />
-    </task>
-    <task id="LOCAL-00018" summary="add hw">
-      <created>1675874716165</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1675874716165</updated>
+      <workItem from="1677691447982" duration="682000" />
     </task>
     <task id="LOCAL-00019" summary="add hw">
       <created>1676215012725</created>
@@ -427,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677691235625</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="дз">
+      <created>1677691502044</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1677691502044</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
