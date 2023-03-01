@@ -246,20 +246,21 @@ let coursesArray = [
 
 for (let element of coursesArray) {
     let elementBlock = document.createElement('div');
-    elementBlock
+    elementBlock.style.display = 'flex';
+    elementBlock.style.flexDirection = 'column';
+    elementBlock.style.alignItems = 'center';
 
     let titleCourses = document.createElement('h1');
     titleCourses.innerText = `${element.title}`;
 
     let durationBlock = document.createElement('div');
     durationBlock.style.display = 'flex';
-    durationBlock.style.justifyContent = 'space-evenly';
-
 
     let monthDuration = document.createElement('h2');
-    monthDuration.innerText = `Month Duration: ${element.monthDuration}`;
+    monthDuration.innerText = ` Duration: ${element.monthDuration} Month`;
+    monthDuration.style.marginRight = '20px';
     let hourDuration = document.createElement('h2');
-    hourDuration.innerText = `Hour Duration: ${element.hourDuration}`;
+    hourDuration.innerText = ` Duration: ${element.hourDuration} Hour`;
 
     durationBlock.append(monthDuration, hourDuration);
 
