@@ -262,14 +262,21 @@ for (let element of coursesArray) {
 
 
 
+    let modules = document.createElement('ul');
+
+
+
     for (let item in element) {
-        let modules = document.createElement('ul');
 
-        for (let itemElement of item) {
-            let module = document.createElement('li');
-            module.innerText = `${itemElement[item]}`;
+        if (item === 'modules') {
 
-            modules.append(module);
+            for (let i of item) {
+                let module = document.createElement('li');
+                module.innerText = `${i}`;
+
+                modules.append(module);
+            }
+
         }
 
 
