@@ -35,6 +35,9 @@ document.body.appendChild(ulArr);
 
 
 
+
+
+
 // - Є масив
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
@@ -241,10 +244,9 @@ let coursesArray = [
     }
 ];
 
-
-
 for (let element of coursesArray) {
     let elementBlock = document.createElement('div');
+    elementBlock
 
     let titleCourses = document.createElement('h1');
     titleCourses.innerText = `${element.title}`;
@@ -254,58 +256,75 @@ for (let element of coursesArray) {
     durationBlock.style.justifyContent = 'space-evenly';
 
 
-
     let monthDuration = document.createElement('h2');
     monthDuration.innerText = `Month Duration: ${element.monthDuration}`;
     let hourDuration = document.createElement('h2');
     hourDuration.innerText = `Hour Duration: ${element.hourDuration}`;
 
+    durationBlock.append(monthDuration, hourDuration);
 
+    let ulModules = document.createElement('ul');
+    for (let li of element.modules) {
+        let liModules = document.createElement('li');
+        liModules.innerText = `${li}`;
 
-    // let modules = document.createElement('ul');
-
-
-
-    for (let item in element) {
-
-        if (typeof item === "object") {
-
-
-
-            let ulmodules = document.createElement('ul');
-
-
-            for (let st of item) {
-                let limod = document.createElement('li');
-                limod.innerText = `${item[st]}`;
-
-                ulmodules.append(limod);
-                elementBlock.append(ulmodules);
-            }
-
-
-
-
-
-            //
-            // for (let i of item) {
-            //     let module = document.createElement('li');
-            //     module.innerText = `${i}`;
-            //
-            //     modules.append(module);
-            // }
-
-        }
-
-
+        ulModules.append(liModules);
     }
 
-    elementBlock.append(titleCourses, durationBlock);
-    durationBlock.append(monthDuration, hourDuration);
+
+
+    elementBlock.append(titleCourses, durationBlock, ulModules);
 
     document.body.appendChild(elementBlock);
 
+
 }
+
+
+
+
+
+//
+// for (let element of coursesArray) {
+//     let elementBlock = document.createElement('div');
+//
+//     let titleCourses = document.createElement('h1');
+//     titleCourses.innerText = `${element.title}`;
+//
+//     let durationBlock = document.createElement('div');
+//     durationBlock.style.display = 'flex';
+//     durationBlock.style.justifyContent = 'space-evenly';
+//
+//
+//     let monthDuration = document.createElement('h2');
+//     monthDuration.innerText = `Month Duration: ${element.monthDuration}`;
+//     let hourDuration = document.createElement('h2');
+//     hourDuration.innerText = `Hour Duration: ${element.hourDuration}`;
+//
+//     let ulModules = document.createElement('ul');
+//     for (let li of element.modules) {
+//         let liModules = document.createElement('li');
+//         liModules.innerText = `${li}`;
+//
+//         ulModules.append(liModules);
+//     }
+//
+//
+//
+//     elementBlock.append(titleCourses, durationBlock);
+//     durationBlock.append(monthDuration, hourDuration);
+//     }
+//
+//
+//
+//     document.body.appendChild(elementBlock);
+//
+// }
+
+
+
+
+
 
 
 // ------------------
