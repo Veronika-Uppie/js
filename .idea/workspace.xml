@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="" />
+    <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/HW9/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/HW9/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/lesson9a/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/lesson9a/main.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +36,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2L80GyuCRbJ5xwiW5rVNXkVZQMw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -87,14 +96,7 @@
       <workItem from="1677605947870" duration="23364000" />
       <workItem from="1677659034553" duration="7861000" />
       <workItem from="1677685511260" duration="5861000" />
-      <workItem from="1677691447982" duration="1198000" />
-    </task>
-    <task id="LOCAL-00020" summary="hw">
-      <created>1676217522916</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1676217522916</updated>
+      <workItem from="1677691447982" duration="1960000" />
     </task>
     <task id="LOCAL-00021" summary="hw">
       <created>1676297870252</created>
@@ -432,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677692163075</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="дз">
+      <created>1677692961377</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1677692961377</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
