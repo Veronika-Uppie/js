@@ -16,6 +16,7 @@ document.body.append(block1);
 
 
 
+
 // - Є масив:
 //     ['Main','Products','About us','Contacts']
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
@@ -240,10 +241,7 @@ let coursesArray = [
     }
 ];
 
-//     title:
-//     monthDuration:
-//     hourDuration:
-//     modules:
+
 
 for (let element of coursesArray) {
     let elementBlock = document.createElement('div');
@@ -252,37 +250,57 @@ for (let element of coursesArray) {
     titleCourses.innerText = `${element.title}`;
 
     let durationBlock = document.createElement('div');
-    // durationBlock.style.display = 'flex';
+    durationBlock.style.display = 'flex';
+    durationBlock.style.justifyContent = 'space-evenly';
+
 
 
     let monthDuration = document.createElement('h2');
-    monthDuration.innerText = `${element.monthDuration}`;
+    monthDuration.innerText = `Month Duration: ${element.monthDuration}`;
     let hourDuration = document.createElement('h2');
-    hourDuration.innerText = `${element.hourDuration}`;
+    hourDuration.innerText = `Hour Duration: ${element.hourDuration}`;
 
 
 
-    let modules = document.createElement('ul');
+    // let modules = document.createElement('ul');
 
 
 
     for (let item in element) {
 
-        if (item === 'modules') {
+        if (typeof item === "object") {
 
-            for (let i of item) {
-                let module = document.createElement('li');
-                module.innerText = `${i}`;
 
-                modules.append(module);
+
+            let ulmodules = document.createElement('ul');
+
+
+            for (let st of item) {
+                let limod = document.createElement('li');
+                limod.innerText = `${item[st]}`;
+
+                ulmodules.append(limod);
+                elementBlock.append(ulmodules);
             }
+
+
+
+
+
+            //
+            // for (let i of item) {
+            //     let module = document.createElement('li');
+            //     module.innerText = `${i}`;
+            //
+            //     modules.append(module);
+            // }
 
         }
 
 
     }
 
-    elementBlock.append(titleCourses, durationBlock, modules);
+    elementBlock.append(titleCourses, durationBlock);
     durationBlock.append(monthDuration, hourDuration);
 
     document.body.appendChild(elementBlock);
@@ -303,3 +321,6 @@ for (let element of coursesArray) {
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+
+
+
