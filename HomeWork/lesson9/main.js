@@ -53,7 +53,6 @@ for (let item of coursesAndDurationArray) {
     document.body.appendChild(itemBlock);
 }
 
-
 // =========================
 //
 //     - Є масив
@@ -164,16 +163,131 @@ for (let simpson of simpsons) {
 }
 
 
-
-
 // =========================
 //     Цикл в циклі
 // - Є масив coursesArray котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
 //
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
+
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular ',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+
+//     title:
+//     monthDuration:
+//     hourDuration:
+//     modules:
+
+for (let element of coursesArray) {
+    let elementBlock = document.createElement('div');
+
+    let titleCourses = document.createElement('h1');
+    titleCourses.innerText = `${element.title}`;
+
+    let durationBlock = document.createElement('div');
+    // durationBlock.style.display = 'flex';
+
+
+    let monthDuration = document.createElement('h2');
+    monthDuration.innerText = `${element.monthDuration}`;
+    let hourDuration = document.createElement('h2');
+    hourDuration.innerText = `${element.hourDuration}`;
+
+
+
+    for (let item in element) {
+        let modules = document.createElement('ul');
+
+        for (let itemElement of item) {
+            let module = document.createElement('li');
+            module.innerText = `${itemElement[item]}`;
+
+            modules.append(module);
+        }
+
+
+    }
+
+    elementBlock.append(titleCourses, durationBlock, modules);
+    durationBlock.append(monthDuration, hourDuration);
+
+    document.body.appendChild(elementBlock);
+
+}
+
+
 // ------------------
-//
+
+
+
+
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 //
 //
