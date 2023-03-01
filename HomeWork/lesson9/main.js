@@ -273,54 +273,13 @@ for (let element of coursesArray) {
     }
 
 
-
     elementBlock.append(titleCourses, durationBlock, ulModules);
 
     document.body.appendChild(elementBlock);
 
-
 }
 
 
-
-
-
-//
-// for (let element of coursesArray) {
-//     let elementBlock = document.createElement('div');
-//
-//     let titleCourses = document.createElement('h1');
-//     titleCourses.innerText = `${element.title}`;
-//
-//     let durationBlock = document.createElement('div');
-//     durationBlock.style.display = 'flex';
-//     durationBlock.style.justifyContent = 'space-evenly';
-//
-//
-//     let monthDuration = document.createElement('h2');
-//     monthDuration.innerText = `Month Duration: ${element.monthDuration}`;
-//     let hourDuration = document.createElement('h2');
-//     hourDuration.innerText = `Hour Duration: ${element.hourDuration}`;
-//
-//     let ulModules = document.createElement('ul');
-//     for (let li of element.modules) {
-//         let liModules = document.createElement('li');
-//         liModules.innerText = `${li}`;
-//
-//         ulModules.append(liModules);
-//     }
-//
-//
-//
-//     elementBlock.append(titleCourses, durationBlock);
-//     durationBlock.append(monthDuration, hourDuration);
-//     }
-//
-//
-//
-//     document.body.appendChild(elementBlock);
-//
-// }
 
 
 
