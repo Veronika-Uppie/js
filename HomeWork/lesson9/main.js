@@ -257,10 +257,10 @@ for (let element of coursesArray) {
     durationBlock.style.display = 'flex';
 
     let monthDuration = document.createElement('h2');
-    monthDuration.innerText = ` Duration: ${element.monthDuration} Month`;
-    monthDuration.style.marginRight = '20px';
+    monthDuration.innerText = ` Duration: ${element.monthDuration} Month `;
+    monthDuration.style.marginRight = '5px';
     let hourDuration = document.createElement('h2');
-    hourDuration.innerText = ` Duration: ${element.hourDuration} Hour`;
+    hourDuration.innerText = ` ( ${element.hourDuration} Hours)`;
 
     durationBlock.append(monthDuration, hourDuration);
 
@@ -286,7 +286,6 @@ for (let element of coursesArray) {
 
 
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
-
 
 //
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
