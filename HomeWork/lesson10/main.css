@@ -16,7 +16,7 @@ body{
 
 }
 
-.number{
+#number{
     width: 254px;
     height: 150px;
     background: rgba(230, 255, 0, 0.27);
