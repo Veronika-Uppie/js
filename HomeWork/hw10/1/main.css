@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+#userData{
+    width: 254px;
+    height: 150px;
+    background: rgba(207, 213, 245, 0.35);
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

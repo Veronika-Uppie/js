@@ -1,0 +1,151 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div id="arr"></div>-->
+
+<!--<button type="submit">prev</button>-->
+<!--<button type="submit">next</button>-->
+
+<!--<script>-->
+<!--    // зробити масив на 100 об'єктів та дві кнопки prev next-->
+<!--    // при завантажені сторінки з'являються перші 10 об'єктів.-->
+<!--    //     При натисканні next виводяться настпні 10 об'єктів-->
+<!--    // При натисканні prev виводяться попередні 10 об'єктів-->
+<!--    //-->
+
+<!--    let array = document.getElementById('arr');-->
+
+<!--    let arr = [];-->
+
+<!--    for (let i = 0; i < 100; i++) {-->
+<!--        arr.push({i})}-->
+
+<!--    let butprev = document.getElementsByTagName('button')[0];-->
+<!--    let butnext = document.getElementsByTagName('button')[1];-->
+
+
+<!--    localStorage.setItem('array', JSON.stringify(arr));-->
+<!--    let arrJSON = localStorage.getItem('array');-->
+<!--    let arrPars =  JSON.parse(arrJSON);-->
+<!--    console.log(arrPars);-->
+
+<!--    array.value = `${JSON.stringify(arrPars[0])} ${JSON.stringify(arrPars[9])}`;-->
+<!--    console.log(array.value);-->
+
+
+<!--    // document.getElementById("button").onclick = function() {-->
+<!--    //     let el = document.getElementById("text");-->
+<!--    //     array.parentNode.removeChild(el);}-->
+
+<!--    butnext.onclick = function (){-->
+<!--        array.parentNode.removeChild(array);-->
+<!--        if (array.value === '{"i":0} {"i":9}') {-->
+<!--            array.value = `${JSON.stringify(arrPars[10])} ${JSON.stringify(arrPars[19])}`;-->
+<!--        } else if (array.value === '{"i":0} {"i":9}') {-->
+<!--            array.value = `${JSON.stringify(arrPars[20])} ${JSON.stringify(arrPars[29])}`;-->
+<!--        } else if (array.value === '{"i":0} {"i":9}') {-->
+<!--            array.value = `${JSON.stringify(arrPars[30])} ${JSON.stringify(arrPars[39])}`;-->
+<!--        } else if (array.value === '{"i":0} {"i":9}') {-->
+<!--            array.value = `${JSON.stringify(arrPars[40])} ${JSON.stringify(arrPars[49])}`;-->
+<!--        } else if (array.value === '{"i":0} {"i":9}') {-->
+<!--            array.value = `${JSON.stringify(arrPars[50])} ${JSON.stringify(arrPars[59])}`;-->
+<!--        } else if (array.value === '{"i":0} {"i":9}') {-->
+<!--            array.value = `${JSON.stringify(arrPars[60])} ${JSON.stringify(arrPars[69])}`;-->
+<!--        }-->
+
+<!--        array.innerText = array.value;-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="arr"></div>
+
+<button type="submit">prev</button>
+<button type="submit">next</button>
+
+<script>
+    // зробити масив на 100 об'єктів та дві кнопки prev next
+    // при завантажені сторінки з'являються перші 10 об'єктів.
+    //     При натисканні next виводяться настпні 10 об'єктів
+    // При натисканні prev виводяться попередні 10 об'єктів
+    //
+
+    //
+    // 222
+    //
+    //
+    // let text = document.getElementById('arr');
+    //
+    // let arr = [];
+    //
+    // for (let i = 0; i < 100; i++) {
+    //     arr.push({i})}
+    //
+    // let butprev = document.getElementsByTagName('button')[0];
+    // let butnext = document.getElementsByTagName('button')[1];
+    //
+    // text.value = `${JSON.stringify(arrPars[0])} ${JSON.stringify(arrPars[9])}`;
+    // text.innerText = text.value;
+    //
+    //
+    // localStorage.setItem('currentText', text.value);
+    //
+    //
+    // butnext.onclick = function () {
+    //     text.remove();
+    //
+    // }
+
+
+
+
+
+
+
+
+    let text = document.getElementById('arr');
+
+    let arr = [];
+
+    for (let i = 0; i < 100; i++) {
+        arr.push({i})}
+
+    let butprev = document.getElementsByTagName('button')[0];
+    let butnext = document.getElementsByTagName('button')[1];
+
+
+    text.innerText = 
+
+
+    butnext.onclick = function () {
+
+    }
+
+    butprev.onclick = function () {
+
+    }
+
+
+
+</script>
+</body>
+</html>

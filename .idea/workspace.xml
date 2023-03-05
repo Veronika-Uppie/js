@@ -5,6 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/1/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/1/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/2/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/sessions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/4/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/hwpagin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/lesson10/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork/lesson10/sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork/lesson10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson10/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork/lesson10/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson10/main.js" afterDir="false" />
@@ -17,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -102,14 +117,7 @@
       <workItem from="1677916410582" duration="2136000" />
       <workItem from="1677938666194" duration="5844000" />
       <workItem from="1677961585613" duration="7304000" />
-      <workItem from="1678004197177" duration="12092000" />
-    </task>
-    <task id="LOCAL-00024" summary="hw">
-      <created>1676305906313</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1676305906313</updated>
+      <workItem from="1678004197177" duration="37004000" />
     </task>
     <task id="LOCAL-00025" summary="hw">
       <created>1676306136548</created>
@@ -447,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678015762736</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="дз">
+      <created>1678020172100</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1678020172100</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
