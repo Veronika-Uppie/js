@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d564557c-71af-4d16-8d42-0314afb1b45c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/1/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/1/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/2/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/sessions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/3/sessions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hw10/4/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/hwpagin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/lesson10/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork/lesson10/sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork/lesson10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork/lesson10/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/lesson10/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/hw10/3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/hw10/3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/hw10/3/sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork/hw10/3/sessions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,14 +102,7 @@
       <workItem from="1677916410582" duration="2136000" />
       <workItem from="1677938666194" duration="5844000" />
       <workItem from="1677961585613" duration="7304000" />
-      <workItem from="1678004197177" duration="37004000" />
-    </task>
-    <task id="LOCAL-00025" summary="hw">
-      <created>1676306136548</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1676306136548</updated>
+      <workItem from="1678004197177" duration="37970000" />
     </task>
     <task id="LOCAL-00026" summary="&#10;hw">
       <created>1676389507762</created>
@@ -462,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678020172100</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="дз">
+      <created>1678058330989</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1678058330990</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

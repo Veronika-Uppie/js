@@ -8,7 +8,9 @@ for (let infoarrEl of infoarr) {
     let infoBlock = document.createElement('div');
     let text = document.createElement('p');
 
-    text.innerText = `Сессія ${JSON.stringify(infoarrEl)}`;
+    // infoarrEl.getFullYear();
+
+    text.innerText = ` ${JSON.stringify(infoarrEl)}`;
 
 
     infoBlock.appendChild(text);
