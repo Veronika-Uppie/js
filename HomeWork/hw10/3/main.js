@@ -7,7 +7,7 @@ page1.onclick = function () {
     let sessionsArray = JSON.parse(localStorage.getItem('sessions')) || [];
     let currentdate = new Date();
 
-    let normdate = `Дата відвідування: ${currentdate.getDay()}.${currentdate.getMonth() + 1}.${currentdate.getFullYear()} Час відвідування: ${currentdate.getHours()}:${currentdate.getMinutes()}:${currentdate.getSeconds()} `;
+    let normdate = `Дата відвідування: ${currentdate.getDate()}.${currentdate.getMonth() + 1}.${currentdate.getFullYear()} Час відвідування: ${currentdate.getHours()}:${currentdate.getMinutes()}:${currentdate.getSeconds()} `;
 
 
     sessionsArray.push(normdate);

@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+}
+.infoBl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+}

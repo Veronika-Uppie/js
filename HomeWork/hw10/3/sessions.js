@@ -1,4 +1,3 @@
-// console.log();
 
 let info = document.getElementById("info");
 
