@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!--*** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.-->
+<!--При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.-->
+<!--(Додатковачастина для завдання)-->
+
+<form action="" name="tableForm" >
+    <input type="number" placeholder="enter number of row" name="numberRow" min="1">
+    <br>
+    <input type="number" placeholder="enter the number of cells" name="numberCells" min="1">
+    <br>
+    <input type="text" placeholder="enter contents" name="contents">
+    <br>
+
+    <input type="submit" id = 'Datainput'>
+</form>
+
+<div id="tableDiv"></div>
+<!--<table id="table"></table>-->
+
+
+
+
+<script src="main.js"></script>
 </body>
 </html>
